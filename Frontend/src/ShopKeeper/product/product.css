@@ -1,0 +1,36 @@
+.tooltip-btn {
+    font-size: 0.7rem;
+    border: 1px solid #ccc;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.custom-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* position above */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    font-size: 0.75rem;
+    white-space: normal;
+}
+
+.position-relative:hover .custom-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
