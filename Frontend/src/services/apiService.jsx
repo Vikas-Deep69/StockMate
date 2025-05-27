@@ -1,5 +1,5 @@
 import axios from "axios";
-export const BASE_URL = "http://localhost:7000/api";
+export const BASE_URL = "https://stockmate-1-02z7.onrender.com/api";
 
 class apiService {
 
